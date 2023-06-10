@@ -1,4 +1,6 @@
-import java.io.PrintWriter;
+package archive;
+
+import java.io.*;
 import java.util.Scanner;
 
 public class APlusB {
@@ -11,11 +13,11 @@ public class APlusB {
     }
 
     void run() {
-        try (Scanner in = new Scanner(System.in);
-              PrintWriter out = new PrintWriter(System.out)) {
-              solve(in, out);
+            try (Scanner in = new Scanner(System.in);
+                 PrintWriter out = new PrintWriter(System.out)) {
+                solve(in, out);
+            }
         }
-    }
 
     public static void main(String[] args) {
         new APlusB().run();
