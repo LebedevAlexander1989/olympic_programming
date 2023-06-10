@@ -1,12 +1,14 @@
-package template;
+package archive;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class V1 {
+public class DominoStacking {
 
     void solve(Scanner in, PrintWriter out) {
-
+        int left = in.nextInt();
+        int right = in.nextInt();
+        out.println(left * right / 2);
     }
 
     void run() {
@@ -17,6 +19,6 @@ public class V1 {
     }
 
     public static void main(String[] args) {
-
+        new DominoStacking().run();
     }
 }
