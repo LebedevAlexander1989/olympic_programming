@@ -3,12 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        int n = in.nextInt();
-        int k = in.nextInt();
-        int count = k / n;
-        int o = k % n;
-        out.println(count + " " + o);
-        // вычислить количество обделенных яблоками
+        int nPeoples = in.nextInt();
+        int nApples = in.nextInt();
+        out.println(nApples / nPeoples + " " + nApples % nPeoples + " " + (nPeoples - nApples % nPeoples) % nPeoples);
     }
 
     void run() {
