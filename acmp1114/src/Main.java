@@ -5,10 +5,7 @@ public class Main {
     void solve(Scanner in, PrintWriter out) {
         int v = in.nextInt();
         int t = in.nextInt();
-        int r = (v * t);
-        int m = r > 109 ? r - 109 - 1: 109 - r + 1;
-        out.println(m);
-        // посмотреть разбор
+        out.println((v * t % 109 + 109) % 109 + 1);
     }
 
     void run() {
