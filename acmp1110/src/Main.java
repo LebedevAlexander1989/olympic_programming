@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        String number = in.nextLine();
-        out.println(number.charAt(number.length() - 1));
+        out.println(in.nextInt() % 10);
     }
 
     void run() {
