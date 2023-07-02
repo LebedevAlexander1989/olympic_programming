@@ -3,12 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        int result = 0;
-        String number = in.nextLine();
-        for (int i = 0; i < number.length(); i++) {
-            result += Integer.parseInt(String.valueOf(number.charAt(i)));
-        }
-        out.println(result);
+        int n = in.nextInt();
+        out.println(n / 100 + n / 10 % 10 + n % 10);
     }
 
     void run() {
