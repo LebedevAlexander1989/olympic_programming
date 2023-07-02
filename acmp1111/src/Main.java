@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        String number = in.nextLine();
-        out.println(Integer.parseInt(number) > 9 ? Integer.parseInt(String.valueOf(number.charAt(number.length() - 2))) : 0);
+        out.println(in.nextInt() / 10 % 10);
 
     }
 
