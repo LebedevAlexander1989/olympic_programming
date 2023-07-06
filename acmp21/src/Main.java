@@ -7,8 +7,8 @@ public class Main {
         int s2 = in.nextInt();
         int s3 = in.nextInt();
 
-        int min = Math.min(Math.min(s1, s2), Math.min(s2, s3));
-        int max = Math.max(Math.max(s1, s2), Math.max(s2, s3));
+        int min = Math.min(Math.min(s1, s2), s3);
+        int max = Math.max(Math.max(s1, s2), s3);
 
         out.println(max - min);
     }
